@@ -1,0 +1,15 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: firoj-test
+subjects:
+- kind: ServiceAccount
+  name: hello
+  namespace: default
+  apiGroup: ""
+roleRef:
+  kind: ClusterRole
+  name: firoj
+  apiGroup: ""
+
+
